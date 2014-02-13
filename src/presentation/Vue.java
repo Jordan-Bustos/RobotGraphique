@@ -31,7 +31,7 @@ import application.Modele;
 public class Vue extends JPanel implements Observer, Constantes {
 
 	/**
-	 * 
+	 * Serial ID
 	 */
 	private static final long serialVersionUID = -3494588346268027181L;
 
@@ -52,9 +52,9 @@ public class Vue extends JPanel implements Observer, Constantes {
 
 	/**
 	 * Constructeur de la vue.
-	 * @param controleur 
-	 * @param modele 
-	 * @param liaison 
+	 * @param controleur Le controleur.
+	 * @param modele  Le modele.
+	 * @param liaison La liaison metier.
 	 */
 	public Vue (Modele modele, Controleur controleur, int nbLignes,int nbColonnes, ILiaisonMetier liaison) 
 	{
@@ -88,7 +88,7 @@ public class Vue extends JPanel implements Observer, Constantes {
 
 	/**
 	 * Permet de creer le panneau d'information.
-	 * @param liaison 
+	 * @param liaison La liaison.
 	 * @return le panneau d'information.
 	 */
 	private Component nouveauPanneauInfo(ILiaisonMetier liaison) {
@@ -120,8 +120,8 @@ public class Vue extends JPanel implements Observer, Constantes {
 
 
 	/**
-	 * 
-	 * @return
+	 * Permet de creer le panneau de bouton.
+	 * @return Le panneau de bouton.
 	 */
 	private Component nouveauPanneauBouton() {
 		JPanel pan = new JPanel() ;
@@ -154,7 +154,7 @@ public class Vue extends JPanel implements Observer, Constantes {
 
 	/**
 	 * Permet de creer le panneau de la grille du damier.
-	 * @param liaison 
+	 * @param liaison La liaison metier.
 	 * @return le panneau de la grille du damier.
 	 */
 	private Component nouvelleGrille(int nbLignes,int nbColonnes, ILiaisonMetier liaison)

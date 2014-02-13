@@ -19,6 +19,10 @@ public class Modele extends Observable implements Constantes, Observer {
 	/** la lisaison metier. */
 	ILiaisonMetier liaison ;
 	
+	/**
+	 * Constructeur.
+	 * @param liaison La liaison metier.
+	 */
 	public Modele(ILiaisonMetier liaison) {
 		this.liaison = liaison ;
 		liaison.addObserver(this);
@@ -47,7 +51,7 @@ public class Modele extends Observable implements Constantes, Observer {
 	}
 
 	/**
-	 * 
+	 * Permet de quitter l'application.
 	 */
 	public void quitter() {
 

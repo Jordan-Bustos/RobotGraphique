@@ -52,15 +52,7 @@ public class Controleur implements ActionListener, Constantes {
 			{
 				modele.quitter() ;
 			}
-			
 				
 		}
-		
-		
-		
-		
 	}
-	
-	
-
 }

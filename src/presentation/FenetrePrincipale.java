@@ -20,15 +20,15 @@ import application.Modele;
 public class FenetrePrincipale extends JFrame implements Constantes, Observer {
 
 	/**
-	 * 
+	 * Serial ID
 	 */
 	private static final long serialVersionUID = 1419100663826337589L;
 
 	/**
 	 * Constructeur de la fenetre principale de l'application.
-	 * @param nbColonnes 
-	 * @param nbLignes 
-	 * @param liaison 
+	 * @param nbColonnes Le nombre de colonnes.
+	 * @param nbLignes Le nombre de ligne. 
+	 * @param liaison La liaison métier.
 	 */
 	public FenetrePrincipale(ILiaisonMetier liaison, int nbLignes, int nbColonnes) {
 		super(NOM_FENETRE) ;
@@ -57,8 +57,6 @@ public class FenetrePrincipale extends JFrame implements Constantes, Observer {
 
 	}
 
-
-
 	@Override
 	public void update(Observable source, Object info) {
 		
@@ -71,7 +69,4 @@ public class FenetrePrincipale extends JFrame implements Constantes, Observer {
 		}
 		
 	}
-	
-	
-
 }
